@@ -1,0 +1,109 @@
+
+<@layout.extends name="layout/layout.htm">
+<@layout.block name="styles">
+
+
+</@layout.block>
+
+<@layout.put block="contents">
+
+<!-- BEGIN SIDEBAR -->
+<!--    <div class="page-sidebar-wrapper">
+         DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing 
+         DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed 
+        <div class="page-sidebar navbar-collapse collapse">
+             BEGIN SIDEBAR MENU 
+             DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) 
+             DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode 
+             DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode 
+             DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing 
+             DOC: Set data-keep-expand="true" to keep the submenues expanded 
+             DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed 
+            <ul class="page-sidebar-menu " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+                <li class="start active ">
+                    <a href="${furl('/customer-dashboard')}">
+                        <i class="icon-home"></i>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="${furl('/post-task')}">
+                        <i class="icon-basket"></i>
+                        <span class="title">Post Task</span>
+                        <span class="arrow "></span>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="${furl('/view-mytasks')}">
+                        <i class="icon-rocket"></i>
+                        <span class="title">View Tasks</span>
+                        <span class="arrow "></span>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="${furl('/account-set')}">
+                        <i class="icon-diamond"></i>
+                        <span class="title">Account Setup</span>
+                        <span class="arrow "></span>
+                    </a>
+
+                </li>
+
+                <li class="last ">
+                    <a href="${furl('/logout')}">
+                        <i class="icon-pointer"></i>
+                        <span class="title">Logout</span>
+                        <span class="arrow "></span>
+                    </a>
+                </li>
+            </ul>
+             END SIDEBAR MENU 
+        </div>
+    </div>-->
+
+
+<div class="main">
+    <div class="container">
+
+        <div class="row margin-bottom-40">
+            <div class="sidebar col-md-3 col-sm-3">
+                <ul class="list-group margin-bottom-25 sidebar-menu">
+                    <li class="list-group-item clearfix"><a href="${furl('/customer-dashboard')}"><i class="fa fa-angle-right"></i> Dashboard</a></li>
+                    <li class="list-group-item clearfix"><a href="${furl('/post-task')}"><i class="fa fa-angle-right"></i> Post Task</a></li>
+                    <li class="list-group-item clearfix"><a href="${furl('/view-mytasks')}"><i class="fa fa-angle-right"></i> View Tasks</a></li>
+                    <li class="list-group-item clearfix"><a href="${furl('/account-set')}"><i class="fa fa-angle-right"></i> Account Setup</a></li>
+                    <li class="list-group-item clearfix"><a href="${furl('/logout')}"><i class="fa fa-angle-right"></i> Logout</a></li>
+                </ul>
+            </div>
+            <!-- END SIDEBAR -->
+            <!-- BEGIN CONTENT -->
+            <div class="page-content-wrapper">
+                <div class="page-content">
+
+
+
+
+                </div>
+            </div>
+            <!-- END CONTENT -->
+        </div>
+    </div>
+</div>
+</@layout.put>
+
+</@layout.extends>
+<!--<script src="../../assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+ END CORE PLUGINS -->
+
+
+<!-- END JAVASCRIPTS -->
+

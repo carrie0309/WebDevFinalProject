@@ -1,0 +1,74 @@
+<@layout.extends name="layout/layout.htm">
+<@layout.put block="contents">
+<div class="main">
+    <div class="container">
+        <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="javascript:;">Pages</a></li>
+            <li class="active">Account Set Up</li>
+        </ul>
+        <!-- BEGIN SIDEBAR & CONTENT -->
+<!--        <div class="row margin-bottom-40">
+            <div class="sidebar col-md-2 col-sm-3">
+                <ul class="list-group margin-bottom-25 sidebar-menu">
+                    <li class="list-group-item clearfix"><a href="${furl('/admin-dashboard')}"><i class="fa fa-angle-right"></i> Dashboard</a></li>
+                    <li class="list-group-item clearfix"><a href="${furl('/manageUser')}"><i class="fa fa-angle-right"></i>Manage Customer</a></li>
+                    <li class="list-group-item clearfix"><a href="${furl('/addCompany')}"><i class="fa fa-angle-right"></i> Account Setup</a></li>
+                    <li class="list-group-item clearfix"><a href="${furl('/account-set')}"><i class="fa fa-angle-right"></i> Account Setup</a></li>
+                    <li class="list-group-item clearfix"><a href="${furl('/logout')}"><i class="fa fa-angle-right"></i> Logout</a></li>
+                </ul>
+            </div>-->
+
+            <!-- BEGIN CONTENT -->
+            <div class="col-md-9 col-sm-9">
+                <h1>Login</h1>
+                <div class="content-form-page">
+                    <div class="row">
+                        <div class="col-md-7 col-sm-7">
+                            <form class="form-horizontal form-without-legend" role="form" action="${furl('/account-set')}" method="post">
+                                <div class="form-group">
+                                    <label for="username" class="col-lg-4 control-label">Old Password <span class="require">*</span></label>
+                                    <div class="col-lg-8">
+                                        <input type="text" class="form-control" name="oldPassword">
+                                    </div>
+                                </div>
+
+                                <!--                                <div class="form-group">
+                                                                    <label for="email" class="col-lg-4 control-label">Email <span class="require">*</span></label>
+                                                                    <div class="col-lg-8">
+                                                                        <input type="text" class="form-control" id="email"  name="email">
+                                                                    </div>
+                                                                </div>-->
+                                <div class="form-group">
+                                    <label for="password" class="col-lg-4 control-label">New Password <span class="require">*</span></label>
+                                    <div class="col-lg-8">
+                                        <input type="text" class="form-control" id="password" name="newPassword">
+                                    </div>
+                                </div>
+
+                                <!--                                <div class="row">
+                                                                    <div class="col-lg-8 col-md-offset-4 padding-left-0">
+                                                                        <a href="page-forgotton-password.html">Forget Password?</a>
+                                                                    </div>
+                                                                </div>-->
+                                <div class="row">
+                                    <div class="col-lg-8 col-md-offset-4 padding-left-0 padding-top-20">
+                                        <button type="submit" class="btn btn-primary">Update</button>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- END CONTENT -->
+        </div>
+        <!-- END SIDEBAR & CONTENT -->
+    </div>
+</div>
+</@layout.put>
+
+
+</@layout.extends>

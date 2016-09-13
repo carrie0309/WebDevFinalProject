@@ -1,0 +1,38 @@
+
+<@layout.extends name="layout/layout.htm">
+<@layout.put block="contents">
+
+
+
+<div class="main">
+    <div class="container">
+        <div class="row margin-bottom-40">
+            <div class="sidebar col-md-3 col-sm-3">
+                <ul class="list-group margin-bottom-25 sidebar-menu">
+                    <li class="list-group-item clearfix"><a href="${furl('/admin-dashboard')}"><i class="fa fa-angle-right"></i> Dashboard</a></li>
+                    <li class="list-group-item clearfix"><a href="${furl('/manageUser')}"><i class="fa fa-angle-right"></i>Manage User</a></li>
+                    <li class="list-group-item clearfix"><a href="${furl('/addCompany')}"><i class="fa fa-angle-right"></i> Add Company</a></li>
+                    <li class="list-group-item clearfix"><a href="${furl('/account-set')}"><i class="fa fa-angle-right"></i> Account Setup</a></li>
+                    <li class="list-group-item clearfix"><a href="${furl('/logout')}"><i class="fa fa-angle-right"></i> Logout</a></li>
+                </ul>
+            </div>
+            <!-- END SIDEBAR -->
+            <!-- BEGIN CONTENT -->
+            <div class="page-content-wrapper">
+                <div class="page-content">
+
+
+
+
+                </div>
+            </div>
+            <!-- END CONTENT -->
+        </div>
+    </div>
+</div>
+</@layout.put>
+
+
+
+
+</@layout.extends>

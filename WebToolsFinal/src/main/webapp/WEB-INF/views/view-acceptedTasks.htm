@@ -1,0 +1,71 @@
+
+<@layout.extends name="layout/layout.htm">
+<@layout.put block="contents">
+
+<div class="main">
+    <div class="container">
+        <div class="row margin-bottom-40">
+            <div class="sidebar col-md-3 col-sm-3">
+                <ul class="list-group margin-bottom-25 sidebar-menu">
+                    <li class="list-group-item clearfix"><a href="${furl('/company-dashboard')}"><i class="fa fa-angle-right"></i> Dashboard</a></li>
+                    <li class="list-group-item clearfix"><a href="${furl('/viewAllTasks')}"><i class="fa fa-angle-right"></i>View Tasks</a></li>
+                    <li class="list-group-item clearfix"><a href="${furl('/view-acceptedTasks')}"><i class="fa fa-angle-right"></i> Accepted Tasks</a></li>
+                    <li class="list-group-item clearfix"><a href="${furl('/account-set')}"><i class="fa fa-angle-right"></i> Account Setup</a></li>
+                    <li class="list-group-item clearfix"><a href="${furl('/logout')}"><i class="fa fa-angle-right"></i> Logout</a></li>
+                </ul>
+            </div>
+            <!-- END SIDEBAR -->
+            <!-- BEGIN CONTENT -->
+
+            <div class="col-md-9 col-sm-9">
+
+                <div class="page-content-wrapper">
+                    <div class="page-content">
+
+                        <table class="table" >
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Category</th>
+                                    <th>Weight</th>
+                                    <th>City</th>
+                                    <th>State</th>
+                                    <th>Country</th>
+                                    <th>Zipcode</th>
+                                    <th>Cooperative Company</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <#list taskList as task>
+                                <tr>
+                                    <td>${task.taskDate?datetime}</td>
+                                    <td>${task.category}</td>
+                                    <td>${task.weight}</td>
+                                    <td>${task.toAddress.city}</td>
+                                    <td>${task.toAddress.state}</td>
+                                    <td>${task.toAddress.country}</td>
+                                    <td>${task.toAddress.zipcode}</td>
+                                    <td>${(task.acceptCompany.username)!} </td>
+                                </tr>
+                                </#list>
+                            </tbody>
+                        </table>
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- END CONTENT -->
+        </div>
+    </div>
+</div>
+
+
+<!--<h2>${msg!}</h2>-->
+
+</@layout.put>
+
+
+
+
+</@layout.extends>
